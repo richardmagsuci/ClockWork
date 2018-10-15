@@ -1,0 +1,65 @@
+﻿<script src="~/Scripts/jsMain.js">
+	
+</script>
+<div class="bg">
+	<div><h1><span style="color: #003366;"><strong>Clockwork Project @ViewData["Version"] on @ViewData["Runtime"]!</strong></span></h1></div>
+	<hr>
+	<div class="DisplayInput">
+		<p id="utc"><b>UTC Time:</b></p>
+		<p id="servertime"><b>Server Time</b></p>
+		<p id="ip"><b>IP Address</b></p>
+	</div>
+	<p>
+		&nbsp;<b>Time Zone</b>&nbsp;
+		<select id="timezone" class="DisplayInput">
+			<option value='p0:00'>UTC-Universal Coordinated Time (GMT+0:00)</option>
+			<option value='p1:00'>ECT-European Central Time (GMT+1:00)</option>
+			<option value='p2:00'>EET-Eastern European Time (GMT+2:00)</option>
+			<option value='p2:00'>ART-(Arabic) Egypt Standard Time (GMT+2:00)</option>
+			<option value='p3:00'>EAT-Eastern African Time (GMT+3:00)</option>
+			<option value='p3:30'>MET-Middle East Time (GMT+3:30)</option>
+			<option value='p4:00'>NET-Near East Time (GMT+4:00)</option>
+			<option value='p5:00'>PLT-Pakistan Lahore Time (GMT+5:00)</option>
+			<option value='p5:30'>IST-India Standard Time (GMT+5:30)</option>
+			<option value='p6:00'>BST-Bangladesh Standard Time (GMT+6:00)</option>
+			<option value='p7:00'>VST-Vietnam Standard Time (GMT+7:00)</option>
+			<option value='p8:00'>CTT-China Taiwan Time (GMT+8:00)</option>
+			<option value='p9:00'>JST-Japan Standard Time (GMT+9:00)</option>
+			<option value='p9:30'>ACT-Australia Central Time (GMT+9:30)</option>
+			<option value='p10:00'>AET-Australia Eastern Time (GMT+10:00)</option>
+			<option value='p11:00'>SST-Solomon Standard Time (GMT+11:00)</option>
+			<option value='p12:00'>NST-New Zealand Standard Time (GMT+12:00)</option>
+			<option value='m11:00'>MIT-Midway Islands Time (GMT-11:00)</option>
+			<option value='m10:00'>HST-Hawaii Standard Time (GMT-10:00)</option>
+			<option value='m9:00'>AST-Alaska Standard Time (GMT-9:00)</option>
+			<option value='m8:00'>PST-Pacific Standard Time (GMT-8:00)</option>
+			<option value='m7:00'>PNT-Phoenix Standard Time (GMT-7:00)</option>
+			<option value='m7:00'>MST-Mountain Standard Time (GMT-7:00)</option>
+			<option value='m6:00'>CST-Central Standard Time (GMT-6:00)</option>
+			<option value='m5:00'>EST-Eastern Standard Time (GMT-5:00)</option>
+			<option value='m5:00'>IET-Indiana Eastern Standard Time (GMT-5:00)</option>
+			<option value='m4:00'>PRT-Puerto Rico and US Virgin Islands Time (GMT-4:00)</option>
+			<option value='m3:30'>CNT-Canada Newfoundland Time (GMT-3:30)</option>
+			<option value='m3:00'>AGT-Argentina Standard Time (GMT-3:00)</option>
+			<option value='m3:00'>BET-Brazil Eastern Time (GMT-3:00)</option>
+			<option value='m1:00'>CAT-Central African Time (GMT-1:00)</option>
+
+		</select>&nbsp;<button type="submit" class="getTime" onclick="UserGetTime()">Get The Time</button>
+	</p>
+	<p hidden id="currentTime"></p>
+	<br />
+</div>
+
+<table id="timelogs">
+	<caption>Server Current Time Logs</caption>
+
+	<tr>
+		<th>UTC Time</th>
+		<th>Client IP Address</th>
+		<th>Server Time</th>
+		<th>Time Zone</th>
+	</tr>	
+</table>
+
+
+

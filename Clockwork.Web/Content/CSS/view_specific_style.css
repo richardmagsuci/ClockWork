@@ -1,0 +1,64 @@
+﻿.getTime {
+	background-color: #3775DD;
+	box-shadow: #21487F 0 2px 0 0;
+	border-radius: 12px;
+	padding: 8px 30px;
+	border: 1px solid blue;
+	color: white;
+}
+
+hr {
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 2px;
+}
+
+.DisplayInput {
+	padding: 4px 30px;
+	border: 1px solid gray;
+	color: darkslategray;
+	font-size: medium;
+	
+}
+
+.getTime:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#timelogs {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+	#timelogs td, .timelogs th {
+		border: 1px solid #ddd;
+		padding: 8px;
+	}
+
+	#timelogs tr:nth-child(even) {
+		background-color: #f2f2f2;
+	}
+
+	#timelogs tr:hover {
+		background-color: #ddd;
+	}
+
+	#timelogs th {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		text-align: center;
+		background-color: dodgerblue;
+		color: white;
+	}
+
+.bg {
+	background-image: url("../BGmain.jpg");
+	border: 1px inset gray;
+	width: inherit;
+	height: auto;
+}
+
